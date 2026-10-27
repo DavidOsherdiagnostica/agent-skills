@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>הזמנה לברית</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=David+Libre:wght@400;500;700&family=Bellefair&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --olive: #55663f;
+    --gold: #a9834b;
+    --ink: #4b3a2a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1696px; height: 2496px; background: #fdf3e8; }
+  .card {
+    position: relative;
+    width: 1696px;
+    height: 2496px;
+    background: url("background.jpg") no-repeat top left / 1696px 2496px;
+    color: var(--ink);
+    font-family: "David Libre", "Frank Ruhl Libre", serif;
+    text-align: center;
+  }
+  .block { position: absolute; }
+
+  /* פסוק פתיחה */
+  .verse {
+    top: 255px; left: 430px; width: 1130px;
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 1.3;
+    color: var(--olive);
+  }
+  .ornament {
+    display: flex; align-items: center; justify-content: center; gap: 22px;
+    margin: 28px auto 0; width: 520px; color: var(--gold);
+  }
+  .ornament span { flex: 1; height: 2px; background: linear-gradient(to left, transparent, var(--gold)); }
+  .ornament span:last-child { background: linear-gradient(to right, transparent, var(--gold)); }
+  .ornament i { font-style: normal; font-size: 30px; line-height: 1; }
+
+  /* פסקת פתיחה */
+  .intro {
+    top: 495px; left: 455px; width: 1090px;
+    font-size: 47px;
+    line-height: 1.62;
+    font-weight: 500;
+  }
+  .intro strong { color: var(--olive); font-weight: 700; }
+
+  /* פרטי האירוע */
+  .details {
+    top: 1015px; left: 865px; width: 640px;
+    font-size: 46px;
+    line-height: 1.5;
+  }
+  .details .lead { font-weight: 500; }
+  .details .date {
+    margin-top: 18px;
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 700;
+    font-size: 62px;
+    color: var(--olive);
+    line-height: 1.25;
+  }
+  .details .greg { font-size: 44px; color: var(--gold); font-weight: 500; letter-spacing: 1px; }
+  .details .time {
+    margin-top: 14px;
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 700;
+    font-size: 54px;
+    color: var(--ink);
+  }
+  .details .place {
+    margin-top: 18px;
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 700;
+    font-size: 54px;
+    color: var(--olive);
+  }
+  .details .addr { font-size: 42px; }
+
+  /* חתימה */
+  .sign {
+    top: 1640px; left: 865px; width: 640px;
+  }
+  .sign .thanks { font-size: 44px; font-weight: 500; }
+  .sign .names {
+    margin-top: 10px;
+    font-family: "Bellefair", "Frank Ruhl Libre", serif;
+    font-size: 84px;
+    line-height: 1.15;
+    color: var(--gold);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <div class="block verse">
+    "הוֹדוּ לַה' כִּי טוֹב כִּי לְעוֹלָם חַסְדּוֹ"
+    <div class="ornament"><span></span><i>✦</i><span></span></div>
+  </div>
+
+  <div class="block intro">
+    בשבח והודיה להשם יתברך על כל הטוב אשר גמלנו,<br>
+    ובפרט בלידת <strong>בננו היקר</strong> בשעה טובה ומוצלחת,<br>
+    אנו נרגשים ומתכבדים להזמינכם להשתתף עמנו בשמחתנו,<br>
+    עת נכניסו לבריתו של אברהם אבינו.
+  </div>
+
+  <div class="block details">
+    <div class="lead">שמחת הברית תתקיים אי"ה</div>
+    <div class="date">ביום חמישי<br>י"ח בחשוון</div>
+    <div class="greg">(29/10/26)</div>
+    <div class="time">בשעה 13:30</div>
+    <div class="place">באולמי "נוף"</div>
+    <div class="addr">רח' א.י. שחראי 12, בית וגן</div>
+  </div>
+
+  <div class="block sign">
+    <div class="thanks">נשמח ונתכבד בבואכם,</div>
+    <div class="names">מנחם ושיר אושר</div>
+  </div>
+
+</div>
+</body>
+</html>
